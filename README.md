@@ -1,16 +1,94 @@
-## Hi there 👋
+# Jaden Bryan
 
-<!--
-**bryan-fund/bryan-fund** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**PM + Infrastructure Engineer** building compute and AI inference platforms — from PRD to production deployment.
 
-Here are some ideas to get you started:
+I ship the kind of products I can also build myself: AI inference runtimes, distributed systems, and the observability that keeps them honest. I write rigorous specs, own customer integrations end-to-end, and treat documentation as a first-class deliverable.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+📍 Seattle, WA · [LinkedIn](https://linkedin.com/in/jaden-bryan) · [Email](mailto:jaden@bryan.fund)
+
+---
+
+## What I Do
+
+| | |
+|---|---|
+| **AI Inference Infra** | vLLM · llama.cpp · ROCm/CUDA · OpenAI-compatible serving · flash attention · quantization (AWQ, GGUF) |
+| **Product Management** | PRD authorship · acceptance criteria · roadmap ownership · launch readiness · compatibility matrices · GTM |
+| **Distributed Systems** | edge orchestration · adaptive rate control · backpressure · idempotent ingestion · resumable jobs |
+| **Cloud & Tooling** | Azure · Cloudflare Workers · Docker · Kubernetes · SQLite/Postgres · Python (PyTorch, pandas) |
+
+---
+
+## Featured Projects
+
+### 🔧 Layered AI Inference Stack — *AMD MI50 / gfx906*
+A reproducible inference runtime for unsupported accelerator hardware, packaged so others can run it without owning the upstream stack.
+
+- Built a layered deployment path: **ROCm → PyTorch → vLLM / llama.cpp**, patching and version-pinning ROCm for unsupported gfx906 GPUs
+- Ships as a **Docker Compose artifact** serving an OpenAI-compatible endpoint — full GPU offload, 32k context, flash attention, env-driven tensor-split for multi-GPU vs single-GPU fallback
+- Authored a full **compatibility matrix**: engine benchmarks, supported feature sets, thermal and quantization tradeoffs
+- Designed a distributed observability layer: token-bucket rate limiting, EMA latency tracking, and a React dashboard for live runtime and per-worker metrics
+
+> **Proves:** I can take frontier-but-unsupported hardware to a production-style, documented, reproducible runtime.
+
+### 🌐 Distributed Property Data Platform
+A multi-worker scraping and ingestion system with adaptive throttling and first-class observability.
+
+- Orchestrates **parallel Cloudflare Workers** with a two-level buffering model (global pool + per-worker queue)
+- **Adaptive throughput control**: token-bucket limiter with dynamic refill, EMA latency tracking, HTTP 520 detection, and safe-mode backoff that trades raw rate for upstream stability
+- **Resumable + idempotent**: progress derived from DB state, `INSERT OR REPLACE` writes, restartable workers
+- **React + TypeScript dashboard** polling collector APIs for progress, worker health, throughput, and utilization vs theoretical max
+
+> **Proves:** distributed systems design — backpressure, fault tolerance, and operator-facing observability.
+>
+> *Scope: targets public assessor data with built-in throttling and error backoff; built as a systems demonstration.*
+
+### 🤖 Agent Verse — Multi-Agent Systems
+A personal sandbox (built on OpenBMB's AgentVerse) for designing and running LLM agent systems.
+
+- Multi-agent orchestration with configurable roles, memories, prompts, parsers, and environment rules
+- A **village economy simulation** where agents farm, trade, negotiate, take loans, and vote
+- **FastAPI** backend for simulation control and world state; local + remote model backends via **vLLM** and OpenAI-compatible APIs
+- Structured output parsing that constrains model output into executable JSON actions
+
+> **Proves:** agentic orchestration, prompt engineering, and model-backend integration.
+
+### 🔐 Hardware-Backed Authentication
+End-to-end secure auth across firmware and web layers.
+
+- Fingerprint presence verification on **ESP8266** + **ECDSA P-256** signing via ECC608 secure element
+- Next.js endpoint proxying with client-side signature verification (`@noble/curves`)
+- Full visibility into auth state, signature material, and verification results
+
+> **Proves:** device-to-web integration and cryptographic verification.
+
+### 🖥️ PiKVM Visual-Language MCP
+A self-contained **MCP server** for automating and inspecting a remote machine via PiKVM.
+
+- Screen-capture, visual analysis, and HID control wrapped as MCP tools
+- Grounded coordinate output for UI-directed actions; optional external model hooks
+
+> **Proves:** MCP tooling and practical agent-driven automation.
+
+---
+
+## Experience
+
+**Microsoft** — Technical Program Manager, Azure Infrastructure Strategy · *Jul 2024–Present*
+Own PRDs, acceptance criteria, and the release roadmap across finance, ops, and engineering. Built a datacenter metadata service used by **70+ teams** governing **10,000+ stakeholders** — the source of truth behind multi-billion-dollar CapEx decisions. Secured leadership alignment enabling **3–8x additional capacity** in new regions, and consolidated 4 infra DBs into one, cutting interdependency bugs by **83%**.
+
+**Altimar Group** — Operator in Residence, AI Infrastructure · *Nov 2025–Present*
+Build and operate the layered inference stack above for MI50-class accelerators.
+
+**Cloudflare** — PM Intern, R2 Storage & Workers · *May–Aug 2024*
+Owned spec authorship and prioritization for developer-facing workstreams; defined the integration contract between storage and serverless compute layers.
+
+**Intel** — Business Development Intern, FPGA Cloud Acceleration · *Jan–May 2023*
+Onboarded 8 partners to an incubator AI cloud platform; grew qualified pipeline **25%**.
+
+---
+
+## Education
+
+**UC Berkeley** · B.A. Data Science + B.S. Business Administration (Haas) · 2020–2024
+President, CMG Strategy Consulting Club · 2nd Place, Gates Foundation Case Competition
