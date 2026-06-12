@@ -75,16 +75,10 @@ A self-contained **MCP server** for automating and inspecting a remote machine v
 ## Experience
 
 **Microsoft** — Technical Program Manager, Azure Infrastructure Strategy · *Jul 2024–Present*
-Own PRDs, acceptance criteria, and the release roadmap across finance, ops, and engineering. Built a datacenter metadata service used by **70+ teams** governing **10,000+ stakeholders** — the source of truth behind multi-billion-dollar CapEx decisions. Secured leadership alignment enabling **3–8x additional capacity** in new regions, and consolidated 4 infra DBs into one, cutting interdependency bugs by **83%**.
-
-**Altimar Group** — Operator in Residence, AI Infrastructure · *Nov 2025–Present*
-Build and operate the layered inference stack above for MI50-class accelerators.
 
 **Cloudflare** — PM Intern, R2 Storage & Workers · *May–Aug 2024*
-Owned spec authorship and prioritization for developer-facing workstreams; defined the integration contract between storage and serverless compute layers.
 
 **Intel** — Business Development Intern, FPGA Cloud Acceleration · *Jan–May 2023*
-Onboarded 8 partners to an incubator AI cloud platform; grew qualified pipeline **25%**.
 
 ---
 
