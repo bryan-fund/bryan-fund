@@ -2,7 +2,7 @@
 
 **PM + Infrastructure Engineer** building compute and AI inference platforms — from PRD to production deployment.
 
-I ship the kind of products I can also build myself: AI inference runtimes, distributed systems, and the observability that keeps them honest. I write rigorous specs, own customer integrations end-to-end, and treat documentation as a first-class deliverable.
+I ship the kind of products I can also build myself: AI inference runtimes, distributed systems, and the observability. I write rigorous specs, own customer integrations end-to-end, and treat documentation as a first-class deliverable.
 
 📍 Seattle, WA · [LinkedIn](https://linkedin.com/in/jaden-bryan) · [Email](mailto:jaden@bryan.fund)
 
