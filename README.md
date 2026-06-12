@@ -2,7 +2,7 @@
 
 **PM + Infrastructure Engineer** building compute and AI inference platforms — from PRD to production deployment.
 
-I ship the kind of products I can also build myself: AI inference runtimes, distributed systems, and the observability. I write rigorous specs, own customer integrations end-to-end, and treat documentation as a first-class deliverable.
+I ship the kind of products I can also build myself: AI inference runtimes, distributed systems, and the observability that keeps them honest. I write rigorous specs, own customer integrations end-to-end, and treat documentation as a first-class deliverable.
 
 📍 Seattle, WA · [LinkedIn](https://linkedin.com/in/jaden-bryan) · [Email](mailto:jaden@bryan.fund)
 
@@ -21,7 +21,7 @@ I ship the kind of products I can also build myself: AI inference runtimes, dist
 
 ## Featured Projects
 
-### 🔧 Layered AI Inference Stack — *AMD MI50 / gfx906*
+### 🔧 [Layered AI Inference Stack — *AMD MI50 / gfx906*](https://github.com/bryan-fund/ML-gfx906)
 A reproducible inference runtime for unsupported accelerator hardware, packaged so others can run it without owning the upstream stack.
 
 - Built a layered deployment path: **ROCm → PyTorch → vLLM / llama.cpp**, patching and version-pinning ROCm for unsupported gfx906 GPUs
@@ -31,7 +31,7 @@ A reproducible inference runtime for unsupported accelerator hardware, packaged 
 
 > **Proves:** I can take frontier-but-unsupported hardware to a production-style, documented, reproducible runtime.
 
-### 🌐 Distributed Property Data Platform
+### 🌐 [Distributed Property Data Platform](https://github.com/bryan-fund/worker-scraper)
 A multi-worker scraping and ingestion system with adaptive throttling and first-class observability.
 
 - Orchestrates **parallel Cloudflare Workers** with a two-level buffering model (global pool + per-worker queue)
@@ -43,7 +43,7 @@ A multi-worker scraping and ingestion system with adaptive throttling and first-
 >
 > *Scope: targets public assessor data with built-in throttling and error backoff; built as a systems demonstration.*
 
-### 🤖 Agent Verse — Multi-Agent Systems
+### 🤖 [Agent Verse — Multi-Agent Systems](https://github.com/bryan-fund/agent-verse)
 A personal sandbox (built on OpenBMB's AgentVerse) for designing and running LLM agent systems.
 
 - Multi-agent orchestration with configurable roles, memories, prompts, parsers, and environment rules
@@ -53,7 +53,7 @@ A personal sandbox (built on OpenBMB's AgentVerse) for designing and running LLM
 
 > **Proves:** agentic orchestration, prompt engineering, and model-backend integration.
 
-### 🔐 Hardware-Backed Authentication
+### 🔐 [Hardware-Backed Authentication](https://github.com/bryan-fund/hardware-auth-portfolio)
 End-to-end secure auth across firmware and web layers.
 
 - Fingerprint presence verification on **ESP8266** + **ECDSA P-256** signing via ECC608 secure element
@@ -62,23 +62,13 @@ End-to-end secure auth across firmware and web layers.
 
 > **Proves:** device-to-web integration and cryptographic verification.
 
-### 🖥️ PiKVM Visual-Language MCP
+### 🖥️ [PiKVM Visual-Language MCP](https://github.com/bryan-fund/automator-portfolio)
 A self-contained **MCP server** for automating and inspecting a remote machine via PiKVM.
 
 - Screen-capture, visual analysis, and HID control wrapped as MCP tools
 - Grounded coordinate output for UI-directed actions; optional external model hooks
 
 > **Proves:** MCP tooling and practical agent-driven automation.
-
----
-
-## Experience
-
-**Microsoft** — Technical Program Manager, Azure Infrastructure Strategy · *Jul 2024–Present*
-
-**Cloudflare** — PM Intern, R2 Storage & Workers · *May–Aug 2024*
-
-**Intel** — Business Development Intern, FPGA Cloud Acceleration · *Jan–May 2023*
 
 ---
 
