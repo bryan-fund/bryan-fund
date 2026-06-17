@@ -69,10 +69,3 @@ A self-contained **MCP server** for automating and inspecting a remote machine v
 - Grounded coordinate output for UI-directed actions; optional external model hooks
 
 > **Proves:** MCP tooling and practical agent-driven automation.
-
----
-
-## Education
-
-**UC Berkeley** · B.A. Data Science + B.S. Business Administration (Haas) · 2020–2024
-President, CMG Strategy Consulting Club · 2nd Place, Gates Foundation Case Competition
